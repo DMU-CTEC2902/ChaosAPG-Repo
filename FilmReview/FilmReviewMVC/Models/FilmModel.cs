@@ -15,7 +15,10 @@ namespace FilmReviewMVC.Models
         public virtual DateTime ReleaseDate { get; set; }
         public virtual string Rating { get; set; }
         public virtual string Runtime { get; set; }
+        public virtual int ReviewId { get; set; }
         public virtual string Studio { get; set; }
+        public virtual ActorModel ActorModel { get; set; }
+        
 
     }
 }
