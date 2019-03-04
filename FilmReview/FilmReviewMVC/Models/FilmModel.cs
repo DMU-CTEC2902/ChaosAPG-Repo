@@ -17,5 +17,7 @@ namespace FilmReviewMVC.Models
         public virtual string Runtime { get; set; }
         public virtual string Studio { get; set; }
 
+        public virtual ActorModel ActorModel { get; set;}
+
     }
 }
