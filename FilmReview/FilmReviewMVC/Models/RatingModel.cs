@@ -5,7 +5,7 @@ using System.Web;
 
 namespace FilmReviewMVC.Models
 {
-    public class RatingModel
+    public class Rating
     {
         public virtual int RatingId { get; set; }
         public virtual string Rating { get; set; }
