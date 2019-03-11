@@ -7,12 +7,12 @@ namespace FilmReviewMVC.Models
 {
     public class News
     {
-        public virtual int NewsId { get; set; }
+        public virtual int NewsID { get; set; }
         public virtual string NewsWriter { get; set; }
         public virtual int DatePublished { get; set; }
-        public virtual int FilmId { get; set; }
-        public virtual string ActorId { get; set; }
-        public virtual string DirectorId { get; set; }
+        public virtual int FilmID { get; set; }
+        public virtual string ActorID { get; set; }
+        public virtual string DirectorID { get; set; }
 
 
     }

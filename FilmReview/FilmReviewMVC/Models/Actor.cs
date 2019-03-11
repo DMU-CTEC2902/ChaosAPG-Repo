@@ -12,7 +12,5 @@ namespace FilmReviewMVC.Models
         public virtual int DOB { get; set; }
         public virtual int Nationality { get; set; }
         public virtual string HighestRatedMovie { get; set; }
-        public virtual string Description { get; set; }
-      
     }
 }
