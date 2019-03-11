@@ -7,8 +7,10 @@ namespace FilmReviewMVC.Models
 {
     public class Genre
     {
-        public virtual int GenreId { get; set; }
-        public virtual string GenreType{ get; set; }
-        
+
+        public virtual int GenreID { get; set; }
+        public virtual string GenreType { get; set; }
+
+
     }
 }
