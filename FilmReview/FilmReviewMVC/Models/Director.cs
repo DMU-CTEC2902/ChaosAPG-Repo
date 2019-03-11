@@ -5,7 +5,7 @@ using System.Web;
 
 namespace FilmReviewMVC.Models
 {
-    public class DirectorModel
+    public class Director
     {
         public virtual int DirectorID { get; set; }
         public virtual string DirectorName { get; set; }
