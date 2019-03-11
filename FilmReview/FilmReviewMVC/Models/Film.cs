@@ -5,7 +5,7 @@ using System.Web;
 
 namespace FilmReviewMVC.Models
 {
-    public class FilmModel
+    public class Film
     {
         public virtual int FilmID { get; set; }
         public virtual int ActorID { get; set; }
@@ -17,7 +17,7 @@ namespace FilmReviewMVC.Models
         public virtual string Runtime { get; set; }
         public virtual int ReviewId { get; set; }
         public virtual string Studio { get; set; }
-        public virtual ActorModel ActorModel { get; set; }
+        public virtual Actor ActorModel { get; set; }
         
 
         public virtual ActorModel ActorModel { get; set;}
