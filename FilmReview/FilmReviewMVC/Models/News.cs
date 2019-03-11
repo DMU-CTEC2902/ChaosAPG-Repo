@@ -15,6 +15,9 @@ namespace FilmReviewMVC.Models
         public virtual string DirectorID { get; set; }
 
 
+        public virtual Actor Actor { get; set; }
+        public virtual Film Film { get; set; }
+        public virtual Director Director { get; set; }
     }
    
 }
