@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-
+using FilmReviewMVC.Models;
 namespace FilmReviewMVC.Models
 {
     public class FilmContext : DbContext
@@ -19,12 +19,20 @@ namespace FilmReviewMVC.Models
         {
         }
 
-        public System.Data.Entity.DbSet<FilmReviewMVC.Models.Film> Films { get; set; }
+        public DbSet<FilmReviewMVC.Models.Film> Films { get; set; }
 
-        public System.Data.Entity.DbSet<FilmReviewMVC.Models.Actor> Actors { get; set; }
+        public DbSet<FilmReviewMVC.Models.Actor> Actors { get; set; }
 
-        public System.Data.Entity.DbSet<FilmReviewMVC.Models.Director> Directors { get; set; }
+        public DbSet<FilmReviewMVC.Models.Director> Directors { get; set; }
 
-        public System.Data.Entity.DbSet<FilmReviewMVC.Models.Genre> Genres { get; set; }
+        public DbSet<FilmReviewMVC.Models.Genre> Genres { get; set; }
+
+        public DbSet<FilmReviewMVC.Models.DirectorComment> DirectorComments { get; set; }
+
+        public DbSet<FilmReviewMVC.Models.ActorComment> ActorComments { get; set; }
+
+        public DbSet<FilmReviewMVC.Models.News> News { get; set; }
+
+        public DbSet<FilmReviewMVC.Models.Review> Reviews { get; set; }
     }
 }
