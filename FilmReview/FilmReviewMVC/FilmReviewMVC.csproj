@@ -202,13 +202,22 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Actor.cs" />
+
     <Compile Include="Models\ActorComment.cs" />
     <Compile Include="Models\Director.cs" />
     <Compile Include="Models\DirectorComment.cs" />
+
+
     <Compile Include="Models\Film.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+
+    <Compile Include="Models\News.cs" />
+    <Compile Include="Models\Rating.cs" />
+    <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\Studio.cs" />
+
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

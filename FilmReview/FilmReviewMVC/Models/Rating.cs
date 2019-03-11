@@ -5,12 +5,10 @@ using System.Web;
 
 namespace FilmReviewMVC.Models
 {
-    public class Genre
+    public class Rating
     {
-
-        public virtual int GenreID { get; set; }
-        public virtual string GenreType { get; set; }
-
-
+        public virtual int RatingId { get; set; }
+        public virtual string Rating { get; set; }
+      
     }
 }
