@@ -7,7 +7,7 @@ namespace FilmReviewMVC.Models
 {
     public class Actor
     {
-        public virtual int ActorId { get; set; }
+        public virtual int ActorID { get; set; }
         public virtual string ActorName{ get; set; }
         public virtual int DOB { get; set; }
         public virtual int Nationality { get; set; }
