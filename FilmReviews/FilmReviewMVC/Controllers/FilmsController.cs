@@ -12,11 +12,22 @@ namespace FilmReviewMVC.Controllers
 {
     public class FilmsController : Controller
     {
+
+        //private List<Film> _films = new List<Film>()
+        //{
+        //    new Film
+        //    { FilmID = 1,
+        //    FilmName = "Madagascar",
+        //    Studio = "Dreamworks",
+        //    Rating = "10"}
+        //};
+        
         private FilmContext db = new FilmContext();
 
         // GET: Films
         public ActionResult Index()
         {
+            //return View(_films);
             var films = db.Films.Include(f => f.Actor).Include(f => f.Director).Include(f => f.Genre);
             return View(films.ToList());
         }
@@ -24,6 +35,13 @@ namespace FilmReviewMVC.Controllers
         // GET: Films/Details/5
         public ActionResult Details(int? id)
         {
+            //if (id == null) return new HttpNotFoundResult();
+
+            //Film selectedFilm = _films.First(f => f.FilmID == id);
+
+            //if (selectedFilm == null) return new HttpNotFoundResult();
+
+            //return View(selectedFilm);
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
