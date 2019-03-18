@@ -1,15 +1,61 @@
-﻿@model List<FilmReviewMVC.Models.Film>
+﻿@model IEnumerable<FilmReviewMVC.Models.Film>
 
 @{
     ViewBag.Title = "Index";
 }
-<h2>Index</h2>
-<ul>
-    @foreach (var film in @Model)
-    {
-        <li>@film.FilmName</li>
-    }
-</ul>
 
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FilmName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Runtime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Studio)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var film in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => film.FilmName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => film.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => film.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => film.Runtime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => film.Studio)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = film.FilmID }) |
+                @Html.ActionLink("Details", "Details", new { id = film.FilmID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = film.FilmID })
+            </td>
+        </tr>
+    }
+
+</table>
 
 

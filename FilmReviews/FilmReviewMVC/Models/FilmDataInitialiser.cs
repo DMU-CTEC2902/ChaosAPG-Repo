@@ -20,16 +20,25 @@ namespace FilmReviewMVC.Models
             Actor actor1 = new Actor();
             actor1.ActorID = 1;
             actor1.ActorName = "Jhon";
+            actor1.DOB = new DateTime(2012, 12, 12);
             context.Actors.Add(actor1);
+
+            Director director1 = new Director();
+            director1.DirectorID = 1;
+            director1.DirectorName = "Steven";
+            director1.DOB = new DateTime(2019, 12, 12);
+            context.Directors.Add(director1);
 
             Film film1 = new Film();
             //Variable to store the Film ID and display it
             film1.FilmID = 1;
             film1.GenreID = 1;
+            film1.ActorID = 1;
+            film1.DirectorID = 1;
             //Variable to store Film Name
             film1.FilmName = "Madagascar";
             //Variable to store Release Date
-            film1.ReleaseDate = Convert.ToDateTime("12/10/2005");
+            film1.ReleaseDate = new DateTime(2012,12,12);
             //Variable to store the Rating
             film1.Rating = "7";
             //Variable to store the RunTime
