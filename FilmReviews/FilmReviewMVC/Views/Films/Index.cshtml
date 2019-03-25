@@ -1,19 +1,23 @@
 ﻿@model IEnumerable<FilmReviewMVC.Models.Film>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Films";
 }
 
 
-<h2>Index</h2>
+<h2>List Of Films</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table table-striped">
+    
     <tr>
+       
+
         <th>
-           @Html.DisplayNameFor(model => model.FilmName)
+           
+            @Html.DisplayNameFor(model => model.FilmName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ReleaseDate)
@@ -27,11 +31,17 @@
         <th>
             @Html.DisplayNameFor(model => model.Studio)
         </th>
-        <th></th>
+        <th>
+           
+        </th>
     </tr>
 
     @foreach (var film in Model)
     {
+        @*<li>
+            <img src="@film.FilmImage"/>
+            <a href="~/Films/Details/@film.FilmID">@film.FilmName</a>
+        </li>*@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => film.FilmName)
@@ -47,6 +57,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => film.Studio)
+            </td>
+            <td>
+                <img src="@film.FilmImage" />
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = film.FilmID }) |
