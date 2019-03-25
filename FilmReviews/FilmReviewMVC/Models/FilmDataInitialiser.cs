@@ -19,17 +19,17 @@ namespace FilmReviewMVC.Models
             context.Genres.Add(genre1);
 
             Genre genre2 = new Genre();
-            genre2.GenreID = 1;
+            genre2.GenreID = 2;
             genre2.GenreType = "Horror";
             context.Genres.Add(genre2);
 
             Genre genre3 = new Genre();
-            genre3.GenreID = 1;
+            genre3.GenreID = 3;
             genre3.GenreType = "Documentary";
             context.Genres.Add(genre3);
 
             Genre genre4 = new Genre();
-            genre4.GenreID = 1;
+            genre4.GenreID = 4;
              genre4.GenreType = "Sci-fi";
             context.Genres.Add(genre4);
 
@@ -41,19 +41,19 @@ namespace FilmReviewMVC.Models
             context.Actors.Add(actor1);
 
             Actor actor2 = new Actor();
-            actor2.ActorID = 1;
+            actor2.ActorID = 2;
             actor2.ActorName = "Mark";
             actor2.DOB = new DateTime(2013, 12, 12);
             context.Actors.Add(actor2);
 
             Actor actor3 = new Actor();
-            actor3.ActorID = 1;
+            actor3.ActorID = 3;
             actor3.ActorName = "Josh";
             actor3.DOB = new DateTime(2014, 12, 12);
             context.Actors.Add(actor3);
 
             Actor actor4 = new Actor();
-            actor4.ActorID = 1;
+            actor4.ActorID = 4;
             actor4.ActorName = "Paul";
             actor4.DOB = new DateTime(2012, 12, 12);
             context.Actors.Add(actor4);
@@ -72,7 +72,7 @@ namespace FilmReviewMVC.Models
             //second director
             Director director2 = new Director();
             //showing the director ID
-            director2.DirectorID = 1;
+            director2.DirectorID = 2;
             //showing the directors name
             director2.DirectorName = "Alex";
             //using the DateTime variable for the directors film date
@@ -85,7 +85,7 @@ namespace FilmReviewMVC.Models
             //Variable to store the Film ID and display it
             film1.FilmID = 1;
             //Variable to store the Genre ID and display it
-            film1.GenreID = 1;
+            film1.GenreID = 3;
             //Variable to store the Actor ID and display it
             film1.ActorID = 1;
             //Variable to store the Director ID and display it
@@ -105,11 +105,11 @@ namespace FilmReviewMVC.Models
 
             Film film2 = new Film();
             //Variable to store the Film ID and display it
-            film2.FilmID = 1;
+            film2.FilmID = 2;
             //Variable to store the Genre ID and display it
-            film2.GenreID = 1;
+            film2.GenreID = 2;
             //Variable to store the Actor ID and display it
-            film2.ActorID = 1;
+            film2.ActorID = 4;
             //Variable to store the Director ID and display it
             film2.DirectorID = 1;
             //Variable to store Film Name
@@ -127,13 +127,13 @@ namespace FilmReviewMVC.Models
 
             Film film3 = new Film();
             //Variable to store the Film ID and display it
-            film3.FilmID = 1;
+            film3.FilmID = 3;
             //Variable to store the Genre ID and display it
-            film3.GenreID = 1;
+            film3.GenreID = 3;
             //Variable to store the Actor ID and display it
             film3.ActorID = 1;
             //Variable to store the Director ID and display it
-            film3.DirectorID = 1;
+            film3.DirectorID = 2;
             //Variable to store Film Name
             film3.FilmName = "Spiderman";
             //Variable to store Release Date
@@ -147,14 +147,20 @@ namespace FilmReviewMVC.Models
             ////Code responsible for adding the first film 
             context.Films.Add(film3);
 
-            ////Second Film
+            //////Second Film
 
 
 
 
             Film film4 = new Film();
             //Variable to store the Film ID and display it
-            film4.FilmID = 2;
+            film4.FilmID = 4;
+            //Variable to store the Genre ID and display it
+            film4.GenreID = 3;
+            //Variable to store the Actor ID and display it
+            film4.ActorID = 2;
+            //Variable to store the Director ID and display it
+            film4.DirectorID = 2;
             //Variable to store Film Name
             film4.FilmName = "Captain Marvel";
             //Variable to store Release Date
@@ -171,7 +177,13 @@ namespace FilmReviewMVC.Models
             //Third Film
             Film film5 = new Film();
             //Variable to store the Film ID and display it
-            film5.FilmID = 3;
+            film5.FilmID = 5;
+            //Variable to store the Genre ID and display it
+            film5.GenreID = 3;
+            //Variable to store the Actor ID and display it
+            film5.ActorID = 1;
+            //Variable to store the Director ID and display it
+            film5.DirectorID = 2;
             //Variable to store Film Name
             film5.FilmName = "Black Panther";
             //Variable to store Release Date
