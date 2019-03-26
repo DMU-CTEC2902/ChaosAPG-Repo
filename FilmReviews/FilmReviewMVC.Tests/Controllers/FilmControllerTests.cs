@@ -35,7 +35,7 @@ namespace FilmReviewMVC.Tests.Controllers
         public void TestThatAnFilmIsAddedSuccessfully()
         {
 
-            RedirectToRouteResult result = _filmsController.Edit(_film) as RedirectToRouteResult;
+            RedirectToRouteResult result = _filmsController.Create(_film) as RedirectToRouteResult;
 
             Assert.AreEqual("success", result.RouteValues["Outcome"]);
 

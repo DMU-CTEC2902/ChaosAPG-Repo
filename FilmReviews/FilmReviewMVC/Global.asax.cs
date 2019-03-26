@@ -14,7 +14,7 @@ namespace FilmReviewMVC
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new FilmDataInitialiser());
+          //  Database.SetInitializer(new FilmDataInitialiser());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
