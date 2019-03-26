@@ -27,6 +27,7 @@ namespace FilmReviewMVC.Controllers
         // GET: Films
         public ActionResult Index()
         {
+            //ViewBag.Userid = User.Identity.GetUserId();
             //return View(_films);
             var films = db.Films.Include(f => f.Actor).Include(f => f.Director).Include(f => f.Genre);
             return View(films.ToList());
@@ -72,6 +73,7 @@ namespace FilmReviewMVC.Controllers
         {
             if (ModelState.IsValid)
             {
+               // film.user = user.identity.GetUserId();
                 db.Films.Add(film);
                 db.SaveChanges();
                 return RedirectToAction("Index");

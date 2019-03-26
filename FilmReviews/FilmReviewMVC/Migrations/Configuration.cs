@@ -1,64 +1,72 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Data.Entity;
-
-namespace FilmReviewMVC.Models
+namespace FilmReviewMVC.Migrations
 {
-    public class FilmDataInitialiser : DropCreateDatabaseAlways<FilmContext>
-    {
-        protected override void Seed(FilmContext context)
-        {
+    using FilmReviewMVC.Models;
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
 
-            //The genres that are available 
-          
+    internal sealed class Configuration : DbMigrationsConfiguration<FilmReviewMVC.Models.FilmContext>
+    {
+        public Configuration()
+        {
+            AutomaticMigrationsEnabled = false;
+            ContextKey = "FilmReviewMVC.Models.FilmContext";
+        }
+
+        protected override void Seed(FilmReviewMVC.Models.FilmContext context)
+        {
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+            //  to avoid creating duplicate seed data.
+
             //this is an object of genre
             Genre genre1 = new Genre();
             //object of genreID
             genre1.GenreID = 1;
             genre1.GenreType = "Comedy";
-            context.Genres.Add(genre1);
+            context.Genres.AddOrUpdate(genre1);
 
             Genre genre2 = new Genre();
             genre2.GenreID = 2;
             genre2.GenreType = "Horror";
-            context.Genres.Add(genre2);
+            context.Genres.AddOrUpdate(genre2);
 
             Genre genre3 = new Genre();
             genre3.GenreID = 3;
             genre3.GenreType = "Documentary";
-            context.Genres.Add(genre3);
+            context.Genres.AddOrUpdate(genre3);
 
             Genre genre4 = new Genre();
             genre4.GenreID = 4;
-             genre4.GenreType = "Sci-fi";
-            context.Genres.Add(genre4);
+            genre4.GenreType = "Sci-fi";
+            context.Genres.AddOrUpdate(genre4);
 
             //Available actors 
             Actor actor1 = new Actor();
             actor1.ActorID = 1;
             actor1.ActorName = "Jhon";
             actor1.DOB = new DateTime(2012, 12, 12);
-            context.Actors.Add(actor1);
+            context.Actors.AddOrUpdate(actor1);
 
             Actor actor2 = new Actor();
             actor2.ActorID = 2;
             actor2.ActorName = "Mark";
             actor2.DOB = new DateTime(2013, 12, 12);
-            context.Actors.Add(actor2);
+            context.Actors.AddOrUpdate(actor2);
 
             Actor actor3 = new Actor();
             actor3.ActorID = 3;
             actor3.ActorName = "Josh";
             actor3.DOB = new DateTime(2014, 12, 12);
-            context.Actors.Add(actor3);
+            context.Actors.AddOrUpdate(actor3);
 
             Actor actor4 = new Actor();
             actor4.ActorID = 4;
             actor4.ActorName = "Paul";
             actor4.DOB = new DateTime(2012, 12, 12);
-            context.Actors.Add(actor4);
+            context.Actors.AddOrUpdate(actor4);
 
             //first director 
 
@@ -67,9 +75,9 @@ namespace FilmReviewMVC.Models
             director1.DirectorID = 1;
             //showing the directors name
             director1.DirectorName = "Steven";
-             //using the DateTime variable for the directors film date
+            //using the DateTime variable for the directors film date
             director1.DOB = new DateTime(2019, 12, 12);
-            context.Directors.Add(director1);
+            context.Directors.AddOrUpdate(director1);
 
             //second director
 
@@ -80,7 +88,7 @@ namespace FilmReviewMVC.Models
             director2.DirectorName = "Alex";
             //using the DateTime variable for the directors film date
             director2.DOB = new DateTime(2019, 12, 12);
-            context.Directors.Add(director2);
+            context.Directors.AddOrUpdate(director2);
 
             //first film 
 
@@ -96,7 +104,7 @@ namespace FilmReviewMVC.Models
             //Variable to store Film Name
             film1.FilmName = "Madagascar";
             //Variable to store Release Date
-            film1.ReleaseDate = new DateTime(2012,12,12);
+            film1.ReleaseDate = new DateTime(2012, 12, 12);
             //Variable to store the Rating
             film1.Rating = "7";
             //Variable to store the RunTime
@@ -104,7 +112,7 @@ namespace FilmReviewMVC.Models
             //Variable to store the Studio 
             film1.Studio = "DreamWorks";
             ////Code responsible for adding the first film 
-            context.Films.Add(film1);
+            context.Films.AddOrUpdate(film1);
 
             //Second Film 
 
@@ -128,7 +136,7 @@ namespace FilmReviewMVC.Models
             //Variable to store the Studio 
             film2.Studio = "Warner Brothers";
             ////Code responsible for adding the first film 
-            context.Films.Add(film2);
+            context.Films.AddOrUpdate(film2);
 
 
             //Third Film
@@ -153,9 +161,9 @@ namespace FilmReviewMVC.Models
             //Variable to store the Studio 
             film3.Studio = "Orange fox studios";
             ////Code responsible for adding the first film 
-            context.Films.Add(film3);
+            context.Films.AddOrUpdate(film3);
 
-          //Fourth Film
+            //Fourth Film
 
 
             Film film4 = new Film();
@@ -178,7 +186,7 @@ namespace FilmReviewMVC.Models
             //Variable to store the Studio 
             film4.Studio = "Marvel";
             //Code responsible for adding the first film 
-            context.Films.Add(film4);
+            context.Films.AddOrUpdate(film4);
 
             //Fifth Film
 
@@ -202,10 +210,8 @@ namespace FilmReviewMVC.Models
             //Variable to store the Studio 
             film5.Studio = "Marvel";
             //Code responsible for adding the first film 
-            context.Films.Add(film5);
+            context.Films.AddOrUpdate(film5);
             base.Seed(context);
-
         }
-
     }
 }
