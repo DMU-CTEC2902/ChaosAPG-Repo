@@ -6,7 +6,7 @@
 
 <br />
 
-<h2>Actor</h2>
+    <h2>Actor</h2>
 
 <br />
 
@@ -14,11 +14,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-
-<div class="card">
-    <div class="card-body">
-
-        <table class="table table-striped">
+        <table class="table table-striped table-bordered">
             <tr>
                 <th>
                     @Html.DisplayNameFor(model => model.ActorName)
@@ -53,11 +49,10 @@
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { id = item.ActorID }) |
                         @Html.ActionLink("Details", "Details", new { id = item.ActorID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.ActorID })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ActorID }) |
+                        @Html.ActionLink("Comment", "ActorComments", new { id = item.ActorID })
                     </td>
                 </tr>
             }
 
         </table>
-    </div>
-</div>
