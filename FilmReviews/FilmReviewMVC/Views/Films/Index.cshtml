@@ -4,13 +4,14 @@
     ViewBag.Title = "Films";
 }
 
-
-<h2>List Of Films</h2>
+<br />
+    <h2>List Of Films</h2>
+<br />
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table table-striped">
+<table class="table table-striped table-bordered">
     
     <tr>
        
@@ -67,7 +68,8 @@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = film.FilmID }) |
                 @Html.ActionLink("Details", "Details", new { id = film.FilmID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = film.FilmID })
+                @Html.ActionLink("Delete", "Delete", new { id = film.FilmID }) |
+                @Html.ActionLink("Review", "Reviews", new { id = film.FilmID }) 
             </td>
         </tr>
     }
