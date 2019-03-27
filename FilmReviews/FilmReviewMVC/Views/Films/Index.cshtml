@@ -31,6 +31,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Studio)
         </th>
+
         <th>
            
         </th>
@@ -58,8 +59,10 @@
             <td>
                 @Html.DisplayFor(modelItem => film.Studio)
             </td>
+
+
             <td>
-                <img src="@film.FilmImage" />
+                <img src="@film.FilmImage" width="250" height="250"> />
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = film.FilmID }) |
