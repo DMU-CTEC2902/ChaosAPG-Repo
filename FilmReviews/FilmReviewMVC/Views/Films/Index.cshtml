@@ -63,13 +63,13 @@
 
 
             <td>
-                <img src="@film.FilmImage" width="250" height="250"> />
+                <img src="@film.FilmImage" width="250" height="250"> 
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = film.FilmID }) |
                 @Html.ActionLink("Details", "Details", new { id = film.FilmID }) |
                 @Html.ActionLink("Delete", "Delete", new { id = film.FilmID }) |
-                @Html.ActionLink("Review", "Reviews", new { id = film.FilmID }) 
+                @Html.ActionLink("Review", "Index", "Reviews" @*new { id = film.FilmID }*@) 
             </td>
         </tr>
     }
