@@ -217,6 +217,14 @@
     <Compile Include="Migrations\201903251650050_AddedImage.Designer.cs">
       <DependentUpon>201903251650050_AddedImage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903271233200_NationalityDataChange.cs" />
+    <Compile Include="Migrations\201903271233200_NationalityDataChange.Designer.cs">
+      <DependentUpon>201903271233200_NationalityDataChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903271239096_AddedUserNameToFilm.cs" />
+    <Compile Include="Migrations\201903271239096_AddedUserNameToFilm.Designer.cs">
+      <DependentUpon>201903271239096_AddedUserNameToFilm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Actor.cs" />
@@ -383,6 +391,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903251650050_AddedImage.resx">
       <DependentUpon>201903251650050_AddedImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903271233200_NationalityDataChange.resx">
+      <DependentUpon>201903271233200_NationalityDataChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903271239096_AddedUserNameToFilm.resx">
+      <DependentUpon>201903271239096_AddedUserNameToFilm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
