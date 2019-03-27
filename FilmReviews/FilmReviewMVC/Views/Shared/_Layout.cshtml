@@ -7,16 +7,19 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+<body class="bg-primary">
+    <nav class="navbar navbar-expand-sm fixed-top bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
             @Html.ActionLink("APG Chaos Reviews", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Film", "Index", "Films", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Actor", "Index", "Actors", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Director", "Index", "Directors", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Actor Comments", "Index", "ActorComments", null, new { @class = "nav-link" })</li>
+
                 </ul>
 
             </div>
