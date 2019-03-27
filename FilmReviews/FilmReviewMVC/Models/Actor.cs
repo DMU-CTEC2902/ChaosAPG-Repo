@@ -10,7 +10,7 @@ namespace FilmReviewMVC.Models
         public virtual int ActorID { get; set; }
         public virtual string ActorName { get; set; }
         public virtual DateTime DOB { get; set; }
-        public virtual int Nationality { get; set; }
+        public virtual string Nationality { get; set; }
         public virtual string HighestRatedMovie { get; set; }
     }
 }

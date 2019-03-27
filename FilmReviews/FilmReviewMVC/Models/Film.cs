@@ -20,6 +20,6 @@ namespace FilmReviewMVC.Models
         public virtual Actor Actor { get; set; }
         public virtual Genre Genre { get; set; }
         public virtual Director Director { get; set; }
-
+        public virtual string UserName { get; set; }
     }
 }
