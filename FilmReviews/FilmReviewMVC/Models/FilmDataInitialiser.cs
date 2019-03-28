@@ -17,47 +17,82 @@ namespace FilmReviewMVC.Models
             Genre genre1 = new Genre();
             //object of genreID
             genre1.GenreID = 1;
+            //Assigning GenreType to Comedy for ID 1
             genre1.GenreType = "Comedy";
+            //Adds genre to table
             context.Genres.Add(genre1);
 
+            //this is an object of genre
             Genre genre2 = new Genre();
+            //object of genreID
             genre2.GenreID = 2;
+            //Assigning GenreType to Comedy for ID 2
             genre2.GenreType = "Horror";
+            //Adds genre to table
             context.Genres.Add(genre2);
 
+            //this is an object of genre
             Genre genre3 = new Genre();
+            //object of genreID
             genre3.GenreID = 3;
+            //Assigning GenreType to Comedy for ID 3
             genre3.GenreType = "Documentary";
+            //Adds genre to table
             context.Genres.Add(genre3);
 
+            //this is an object of genre
             Genre genre4 = new Genre();
+            //object of genreID
             genre4.GenreID = 4;
-             genre4.GenreType = "Sci-fi";
+            //Assigning GenreType to Comedy for ID 4
+            genre4.GenreType = "Sci-fi";
+            //Adds genre to table
             context.Genres.Add(genre4);
 
             //Available actors 
+
+            //this is an object of actor
             Actor actor1 = new Actor();
+            //object of ActorID
             actor1.ActorID = 1;
+            //Assigning GenreType to Comedy for ID 1
             actor1.ActorName = "Jhon";
+            //Assigning the date of birth variable 
             actor1.DOB = new DateTime(2012, 12, 12);
+            //Adds genre to table
             context.Actors.Add(actor1);
 
+            //this is an object of actor
             Actor actor2 = new Actor();
+            //object of ActorID
             actor2.ActorID = 2;
+            //Assigning GenreType to Comedy for ID 2
             actor2.ActorName = "Mark";
+            //Assigning the date of birth variable 
             actor2.DOB = new DateTime(2013, 12, 12);
+            //Adds genre to table
             context.Actors.Add(actor2);
 
+            //this is an object of actor
             Actor actor3 = new Actor();
+            //object of ActorID
             actor3.ActorID = 3;
+            //Assigning GenreType to Comedy for ID 3
             actor3.ActorName = "Josh";
+            //Assigning the date of birth variable 
             actor3.DOB = new DateTime(2014, 12, 12);
+            //Adds genre to table
             context.Actors.Add(actor3);
 
+            //this is an object of actor
             Actor actor4 = new Actor();
+            //object of ActorID
             actor4.ActorID = 4;
+            //Assigning GenreType to Comedy for ID 4
             actor4.ActorName = "Paul";
+            //Assigning the date of birth variable 
             actor4.DOB = new DateTime(2012, 12, 12);
+            //Adds genre to tables
             context.Actors.Add(actor4);
 
             //first director 
