@@ -111,8 +111,11 @@ namespace FilmReviewMVC.Migrations
             film1.Runtime = "1 hour";
             //Variable to store the Studio 
             film1.Studio = "DreamWorks";
+            //variable to store the file image
+            film1.FilmImage = "/Images/MDGSCR.jpg";
             ////Code responsible for adding the first film 
             context.Films.AddOrUpdate(film1);
+            
 
             //Second Film 
 
@@ -135,6 +138,8 @@ namespace FilmReviewMVC.Migrations
             film2.Runtime = "2 hour";
             //Variable to store the Studio 
             film2.Studio = "Warner Brothers";
+            //variable to store the file image
+            film2.FilmImage = "/Images/AA.jpg";
             ////Code responsible for adding the first film 
             context.Films.AddOrUpdate(film2);
 
@@ -160,6 +165,8 @@ namespace FilmReviewMVC.Migrations
             film3.Runtime = "3 hour";
             //Variable to store the Studio 
             film3.Studio = "Orange fox studios";
+            //variable to store the file image
+            film3.FilmImage = "/Images/SPDRMN.jpg";
             ////Code responsible for adding the first film 
             context.Films.AddOrUpdate(film3);
 
@@ -185,6 +192,8 @@ namespace FilmReviewMVC.Migrations
             film4.Runtime = "2 hours";
             //Variable to store the Studio 
             film4.Studio = "Marvel";
+            //variable to store the file image
+            film4.FilmImage = "/Images/CM.jpg";
             //Code responsible for adding the first film 
             context.Films.AddOrUpdate(film4);
 
@@ -209,8 +218,19 @@ namespace FilmReviewMVC.Migrations
             film5.Runtime = "2 hours";
             //Variable to store the Studio 
             film5.Studio = "Marvel";
+            //variable to store the file image
+            film5.FilmImage = "/Images/BlckP.jpg";
             //Code responsible for adding the first film 
             context.Films.AddOrUpdate(film5);
+
+            //News news1 = new News();
+            //news1.NewsID = 1;
+            //news1.NewsWriter = "Steve";
+            //news1.DatePublished = Convert.ToDateTime("09/01/2019 00:00:00");
+            //news1.NewsDescription = "This is not a good movie";
+            //news1.ActorID = 1;
+            //news1.DirectorID = 2;
+
             base.Seed(context);
         }
     }

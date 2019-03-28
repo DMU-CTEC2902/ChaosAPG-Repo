@@ -23,6 +23,11 @@
             @Html.DisplayNameFor(model => model.DatePublished)
         </th>
         <th>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsDescription)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.ActorID)
         </th>
         <th>
@@ -43,15 +48,19 @@
             @Html.DisplayFor(modelItem => item.DatePublished)
         </td>
         <td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NewsDescription)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.ActorID)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.DirectorID)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.NewsID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.NewsID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.NewsID })
+            @Html.ActionLink("Edit", "Edit", new { id = item.NewsID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.NewsID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.NewsID })
         </td>
     </tr>
 }
