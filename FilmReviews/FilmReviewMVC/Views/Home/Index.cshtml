@@ -1,33 +1,39 @@
-﻿@{
+﻿@model IEnumerable<FilmReviewMVC.Models.Film>
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
-    <h1>THE CREATORS</h1>
+    @*<h1>THE CREATORS</h1>*@
     <p class="lead">ChaosAPG brings the ultimate website for film reviews.</p>
+    <p style="font-family:Akzidenz-Grotesk Pro Bold Cnd; font-size: 64px">THE CREATORS</p>
     @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>LATEST FILMS</h2>
+        <p style="font-family:Akzidenz-Grotesk Pro Bold Cnd; font-size: 50px">THE</p>
         <p>
-            After the death of his father, T'Challa returns home to the African nation of Wakanda to take his rightful place as king. 
-            When a powerful enemy suddenly reappears, T'Challa's mettle as king -- and as Black Panther -- gets tested when he's drawn into a conflict that puts the fate of Wakanda and the entire world at risk. 
+            After the death of his father, T'Challa returns home to the African nation of Wakanda to take his rightful place as king.
+        </p>
+
+        <br />
+        <img src="~/Images/BlckP.jpg" width="1200" height="500" />
+        <br />
+
+    </div>
+    <div class="col-md-4">
+        <p style="font-family:Akzidenz-Grotesk Pro Bold Cnd; font-size: 50px">LATEST</p>
+        <p>
+            When a powerful enemy suddenly reappears, T'Challa's mettle as king -- and as Black Panther -- gets tested when he's drawn into a conflict that puts the fate of Wakanda and the entire world at risk.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <p style="font-family:Akzidenz-Grotesk Pro Bold Cnd; font-size: 50px">FILMS</p>
+        <p>
             Faced with treachery and danger, the young king must rally his allies and release the full power of Black Panther to defeat his foes and secure the safety of his people.
         </p>
 
-        <img src="~/Images/BlckP.jpg" width="1200" height="500" />
-        @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>ACTORS</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>DIRECTORS</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>*@
-    </div>
+
 </div>
